@@ -1,31 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>js crash cource</title>
-</head>
-<body>
-    <h1>
-        <b><u>js crash course</u></b>
-    </h1>
-    <script src="main.js"></script>
-    <section class="container">
-        
 
-    <table>
-        <tr>
-            <th>items name</th>
-            <th>price</th>
-            <th>quantity </th>
-        </tr>
-        <tr>
-            <td>milk</td>
-            <td>1500dt</td>
-            <td>0</td>
-        </tr>
-    </table>
-  </section>
-</body>
+<!doctype html>
+<html lang="en"> 
+    <head>
+<meta charset="utf-8">
+<title>shopping card</title>
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row justify-content-center"></div>
+            <div class="table-responsive"></div>
+            <table id='mytable' class="table">
+                <thead>
+                   <tr>
+                       <th>product</th>
+                       <th>quantity</th>
+                       <th>price</th>
+                       <th class="text-right">
+                           <span id="amount" class="amount">
+                         amount</span>
+
+                           
+                       </th>
+                   </tr> 
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><p>orange juice</p></td>
+                        <td> <div class="button-container">
+                            <button class="cart-quantity-plus" type="button" value="+">+</button>
+                            <input class="text" name="quantity" min="0" class="quantity form-control" value="0"/>
+                            <button class="cart-quantity-minus" type="button" value="-">-</button>
+                            </div>
+                        </td>
+                    
+                    
+                    <td>
+                        
+                        <input type="text" value="5" class="price form-control" disabled>
+                    
+                    </td>
+                    <td align="right">$<span id="amount" class="amount">0</span>  </td> 
+                    </tr> 
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4"></td>
+                        <td align="right">
+                            <strong>total=$<span id="total" class="total">0</span></strong>
+                                
+                             </td>
+                    </tr>
+                </tfoot>
+            </table>
+         </div>
+       <script type="text/javascript" src="main.js"></script>
+        
+    </body>
 </html>
