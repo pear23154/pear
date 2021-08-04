@@ -6,56 +6,29 @@
 <title>shopping card</title>
 <meta name="viewport" content="width=device-width">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     </head>
     <body>
-        <div class="container">
-            <div class="row justify-content-center"></div>
-            <div class="table-responsive"></div>
-            <table id='mytable' class="table">
+     
+        <table>
+            <div class="container">
                 <thead>
-                   <tr>
-                       <th>product</th>
-                       <th>quantity</th>
-                       <th>price</th>
-                       <th class="text-right">
-                           <span id="amount" class="amount">
-                         amount</span>
-
-                           
-                       </th>
-                   </tr> 
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><p>orange juice</p></td>
-                        <td> <div class="button-container">
-                            <button class="cart-quantity-plus" type="button" value="+">+</button>
-                            <input class="text" name="quantity" min="0" class="quantity form-control" value="0"/>
-                            <button class="cart-quantity-minus" type="button" value="-">-</button>
-                            </div>
-                        </td>
-                    
-                    
-                    <td>
-                        
-                        <input type="text" value="5" class="price form-control" disabled>
-                    
-                    </td>
-                    <td align="right">$<span id="amount" class="amount">0</span>  </td> 
-                    </tr> 
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="4"></td>
-                        <td align="right">
-                            <strong>total=$<span id="total" class="total">0</span></strong>
-                                
-                             </td>
-                    </tr>
-                </tfoot>
-            </table>
-         </div>
-       <script type="text/javascript" src="main.js"></script>
+            <tr>
+                <th>product </th>
+                <th>quantity</th>
+                <th>price</th>
+                <th>amount</th>
+            </tr>
+        </thead>
+        <tbody> 
+           <div class="row">
+            <td ><i class="fas fa-trash"></i> <br> orange juice</td>
+            
+            </div>
+        </tbody>
+        </div>
+        </table>
+        <script src="main.js"></script>
         
     </body>
 </html>
