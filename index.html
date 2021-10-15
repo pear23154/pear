@@ -3,32 +3,69 @@
 <html lang="en"> 
     <head>
 <meta charset="utf-8">
-<title>shopping card</title>
+<title>shopping cart</title>
 <meta name="viewport" content="width=device-width">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<script src="main.js" async></script>
     </head>
     <body>
      
-        <table>
-            <div class="container">
-                <thead>
-            <tr>
-                <th>product </th>
-                <th>quantity</th>
-                <th>price</th>
-                <th>amount</th>
-            </tr>
-        </thead>
-        <tbody> 
-           <div class="row">
-            <td ><i class="fas fa-trash"></i> <br> orange juice</td>
+        <div class="bg-image"></div>
+        <div class="container">
             
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                <span class="cart-judgment cart-header cart-column">JUDGMENT</span>
             </div>
-        </tbody>
+         <div class="cart-items">
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+              <img class="cart-item-image" src="https://www.bewellbuzz.com/wp-content/uploads/2015/08/orange-juice.jpg" width="70" height="70"> 
+              <span class="cart-item-title">orange juice</span>
+              </div>
+              
+                <span class="cart-price cart-column">$5</span>
+                 
+              <div class="cart-quantity cart-column">
+            <i class="fas fa-plus"></i> 
+            <!-- <input class="cart-quantity-input" type="number" value="1">  -->
+            <span class="cart-quantity-input">0</span>
+            <i class="fas fa-minus"></i> 
+             </div>
+             <div class="cart-judgment cart-column">
+                <i class="fas fa-trash"> </i> <i class="fas fa-heart"></i>
+              </div>
+            </div>
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="https://www.wikijuices.com/wp-content/uploads/2017/05/strawberry-juice.jpg">
+                    <span class="cart-item-title">strawberry-juice</span>
+                </div>
+                <span class="cart-price cart-column">$7</span>
+                <div class="cart-quantity cart-column">
+                    <i class="fas fa-plus"></i> 
+                  <!-- <input class="cart-quantity-input" type="number" value="0">  -->
+                  <span class="cart-quantity-input">0</span>
+                  <i class="fas fa-minus"></i> 
+                </div>
+                <div class="cart-judgment cart-column">
+                    <i class="fas fa-trash"> </i>  <i class="fas fa-heart"></i>
+                </div>
+            </div>
+           <div class="cart-total">
+               <strong class="cart-total-title">total</strong>
+               <span class="cart-total-price">$0</span>
+           </div>
+            
+            
+    
         </div>
-        </table>
-        <script src="main.js"></script>
         
+        
+    
+</div>
     </body>
 </html>
