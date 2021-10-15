@@ -1,21 +1,147 @@
+/* @import url(); */
+ 
+/* *{
+    box-sizing: border-box;
+} */
+body,html{
+   height: 100%;
+margin: 0px;
+   
+}
+.bg-image{
+    background-image:url('https://www.healthyeating.org/images/default-source/home-0.0/nutrition-topics-2.0/general-nutrition-wellness/2-2-2-3foodgroups_fruits_detailfeature.jpg?sfvrsn=64942d53_4');
+     -webkit-background-size:cover;
+     background-size: cover;
+     background-repeat: no-repeat;
+    height: 100%;
+     background-position: center center;
+     filter: blur(8px); 
+     
+}
+.container{
+position: absolute;
 
-body{
-margin-top: 0px;
+
+top: 50%;
+/* bottom: 50%; */
+left: 50%;
+transform: translate(-50%,-50%);
+z-index: 5;
+width: 60%;
+
+background-color: rgba(0,0,0,0.3);
+
+
+padding: 5% 5%;
+color: white;
+text-align: center;
+border-top-left-radius:  70px; 
+      border-bottom-right-radius: 70px;
+      border: 10px inset #fff;
+      color: #fff;
+       display: flex;
+      justify-content: center;
+      flex-direction: column; 
+
 }
-nav{
-    background-color: aquamarine;
-    /* width: 100%;
-    height: 80px; */
+.cart-row{
+    display: flex;
+    justify-content: space-between ;
+    width: 70%;
+    /* transition: box-shadow .2s ease 0s; */
     }
- .logo-docplanner{
-    width: 20%;
-    height: 50px;
-padding-left: 130px; 
- }
-nav ul{
-    float: right;
-    margin: 0px;
-    padding: 0px;
     
+    .cart-column{
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid black;
+        margin-right: 1.5em;
+        padding-bottom: 10px;
+        margin-top: 10px;
+    } 
+    .cart-header{
+        font-weight: bold;
+        font-size: 1.25em;
+        color: black;
+    }
+    .cart-items{
+        
+    }
+    .cart-item{
+        width: 45%;
+    }
+.cart-item-image{
+    border: 1px  ;
+    border-radius: 8px;
+    width: 40%;
+    height: 70px;
 }
+.cart-item-title{
+    color: black;
+    margin-left: .5em;
+    font-size: 15px;
+}
+
+.cart-price{
+    width: 15%;
+    font-size: 1.2em;
+    color: black;
+    
+    /* border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    padding-top:  10px;
+    text-align: center;
+    font-size: 1.2em;
+    margin:0px 25px; */
+
+}
+.cart-quantity{
+    width: 35%;
+}
+.cart-quantity-input{
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding-top:  10px;
+    text-align: center;
+    font-size: 1.2em;
+    margin:0px 25px;
+}
+i{
+    cursor: pointer;
+    margin-left: 20px;
+    color: black;
+}
+.cart-judgment{
+    width: 25%;
+}
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 70%;
+}
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+   
+}
+
+   .fa-heart{
+       color: silver;
+   }
+
+   .red{
+       color:tomato
+   }
 
